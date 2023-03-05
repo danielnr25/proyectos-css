@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login</title>
+   <link rel="stylesheet" href="main.css">
+</head>
+<body>
+   <div class="form-container">
+      <div class="login-container">
+         <h2>Bienvenido</h2>
+         <p>Ingrese sus credenciales</p>
+
+         <form action="#">
+            <p>
+               <label for="username">Usuario</label>
+               <input class="input" type="text" name="username" id="username">
+            </p>
+            <p>
+               <label for="password">Contraseña</label>
+               <input class="input" type="password" name="password" id="password">
+            </p>
+            <div class="options">
+               <div>
+                  Remember me <input type="checkbox" name="rememberme" id="rememberme">
+               </div>
+               <div>
+                  <a href="#">Olvide mi contraseña</a>
+               </div>
+            </div>
+            <p>
+               <input type="submit" class="btn btn-login" value="login">
+            </p>
+            <div class="providers">
+               <span>Otros métodos de auntenticación</span>
+               <button class="btn btn-google">Google</button>
+               <button class="btn btn-facebook">Facebook</button>
+               <button class="btn btn-twitter">Twitter</button>
+            </div>
+         </form>
+      </div>
+      <div class="welcome-screen-container">
+         <img src="github.png" alt="">
+      </div>
+   </div>
+
+  
+</body>
+</html>
