@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,22 @@
    <title>Login</title>
    <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
    <div class="form-container">
       <div class="login-container">
          <h2>Bienvenido</h2>
          <p>Ingrese sus credenciales</p>
 
-         <form action="#">
-            <p>
-               <label for="username">Usuario</label>
-               <input class="input" type="text" name="username" id="username">
-            </p>
-            <p>
+         <form id="formulario">
+            <div class="form">
+               <label for="email">Correo electrónico</label>
+               <input class="input" type="email" name="email" id="email" placeholder="Email de usuario">
+            </div>
+            <div class="form">
                <label for="password">Contraseña</label>
-               <input class="input" type="password" name="password" id="password">
-            </p>
+               <input class="input" type="password" name="password" id="password" placeholder="Contraseña de usuario">
+            </div>
             <div class="options">
                <div>
                   Remember me <input type="checkbox" name="rememberme" id="rememberme">
@@ -30,22 +32,38 @@
                   <a href="#">Olvide mi contraseña</a>
                </div>
             </div>
-            <p>
-               <input type="submit" class="btn btn-login" value="login">
-            </p>
-            <div class="providers">
-               <span>Otros métodos de auntenticación</span>
-               <button class="btn btn-google">Google</button>
-               <button class="btn btn-facebook">Facebook</button>
-               <button class="btn btn-twitter">Twitter</button>
-            </div>
+            <button type="submit" class="btn btn-login" disabled>
+               Login
+            </button>
          </form>
+         <div id="spinner">
+            <div class="sk-circle">
+               <div class="sk-circle1 sk-child"></div>
+               <div class="sk-circle2 sk-child"></div>
+               <div class="sk-circle3 sk-child"></div>
+               <div class="sk-circle4 sk-child"></div>
+               <div class="sk-circle5 sk-child"></div>
+               <div class="sk-circle6 sk-child"></div>
+               <div class="sk-circle7 sk-child"></div>
+               <div class="sk-circle8 sk-child"></div>
+               <div class="sk-circle9 sk-child"></div>
+               <div class="sk-circle10 sk-child"></div>
+               <div class="sk-circle11 sk-child"></div>
+               <div class="sk-circle12 sk-child"></div>
+            </div>
+         </div>
+         <div class="providers">
+            <span>Otros métodos de auntenticación</span>
+            <button class="btn btn-google">Google</button>
+            <button class="btn btn-facebook">Facebook</button>
+         </div>
       </div>
       <div class="welcome-screen-container">
          <img src="github.png" alt="">
       </div>
    </div>
 
-  
+   <script src="app.js"></script>
 </body>
+
 </html>
